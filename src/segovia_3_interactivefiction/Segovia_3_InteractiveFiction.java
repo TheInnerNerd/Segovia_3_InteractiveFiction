@@ -26,6 +26,9 @@ public class Segovia_3_InteractiveFiction {
         }
         counter--;
     }
+    /*
+    Beginning Of Game
+    */
    static public void startUp(){
         System.out.println("You are walking and you see a child on"
         + " the floor crying");
@@ -38,6 +41,9 @@ public class Segovia_3_InteractiveFiction {
             mazeEntrance();
         }   
     }
+    /*
+    First Choice
+    */
    static public void mazeEntrance(){
         System.out.println("you see gates");
         System.out.println("do you enter? or try to find away around?");
@@ -51,13 +57,16 @@ public class Segovia_3_InteractiveFiction {
             {
                 mazeStart();
         }
-    }    
+    }
     static public void goAround(){
         System.out.println("There isn't a way around");
         System.out.println("You have to go back"); 
             {   mazeEntrance();
         }
     }
+    /*
+    Here is the beginning of the maze
+    */
     static public void mazeStart(){
         System.out.println("You start to notice that through these gates are");
         System.out.println("to something like a garden maze but of course much more");
@@ -88,13 +97,13 @@ public class Segovia_3_InteractiveFiction {
                 rightIsRight.contains ("Left") || rightIsRight.contains ("left")
                 || rightIsRight.contains ("Go left") || rightIsRight.contains ("go left")) 
             {        mazeContinues();
-}
+        }
             else if (
                 rightIsRight.contains ("Right") || rightIsRight.contains ("right")
                 || rightIsRight.contains ("Go right") || rightIsRight.contains ("go right")) 
             {        anotherDeadEnd();
+        }
     }
-}
 
     public static void anotherDeadEnd(){
         System.out.println("again, you can do left or right");
@@ -104,20 +113,20 @@ public class Segovia_3_InteractiveFiction {
                 anotherDeadEnd.contains ("Left") || anotherDeadEnd.contains ("left")
                 || anotherDeadEnd.contains ("Go left") || anotherDeadEnd.contains ("go left"))
             {         anotherDeadEnd2();
-}
+        }
             else if (
                 anotherDeadEnd.contains ("Right") || anotherDeadEnd.contains ("right")
                 || anotherDeadEnd.contains ("Go right") || anotherDeadEnd.contains ("go right")) 
             {    anotherDeadEnd2();
+        }
     }
-}
 
     public static void anotherDeadEnd2(){
         System.out.println("it's another dead end");
         System.out.println ("so you go back");
             {    anotherDeadEnd();
+        }
     }
-}
 
     public static void mazeContinues(){
         System.out.println("again, you can do left or right or straight");
@@ -127,18 +136,21 @@ public class Segovia_3_InteractiveFiction {
                 anotherDeadEnd.contains ("Left") || anotherDeadEnd.contains ("left")
                 || anotherDeadEnd.contains ("Go left") || anotherDeadEnd.contains ("go left")) 
             {    mazeFinish();
-    }   
+        }   
             else if(
                 anotherDeadEnd.contains ("Right") || anotherDeadEnd.contains ("right")
                 || anotherDeadEnd.contains ("Go right") || anotherDeadEnd.contains ("go right")) 
             {    mazeFinish();
-}
+        }
             else if(
             anotherDeadEnd.contains ("Straight") || anotherDeadEnd.contains ("straight")
             || anotherDeadEnd.contains ("Go straight") || anotherDeadEnd.contains ("go straight")) 
             {    mazeFinish();
+        }
     }
-}
+    /*
+    Final Part Of Maze
+    */
     public static void mazeFinish(){
         System.out.println("you've realized you're outta that dark maze and you see sunlight coming from where you now know as the east");
         System.out.println("once again two ways east or west?");
@@ -147,14 +159,13 @@ public class Segovia_3_InteractiveFiction {
                 mazeFinish.contains ("East") || mazeFinish.contains ("east")
                 || mazeFinish.contains ("Go east") || mazeFinish.contains ("go east")) 
             {    oldHoboLadyScene();
-    }
+        }
             else if (
                 mazeFinish.contains ("West") || mazeFinish.contains ("west")
                 || mazeFinish.contains ("Go west") || mazeFinish.contains ("go west")) 
             {    plotTwist();
+        }
     }
-}
-
     public static void plotTwist(){
         System.out.println("as you are going west, away from the sun rise");
         System.out.println("everything starts to shake. you fall");
@@ -166,15 +177,17 @@ public class Segovia_3_InteractiveFiction {
                 plotTwist.contains ("East") || plotTwist.contains ("east")
                 || plotTwist.contains ("Go east") || plotTwist.contains ("go east")) 
             {    oldHoboLadyScene();
-    }
+        }
             else if (
                 mazeFinish.contains ("West") || mazeFinish.contains ("west")
                 || mazeFinish.contains ("Go west") || mazeFinish.contains ("go west")) 
                 System.out.println("it all happens again with the baby in your arms you don't know if you'll try it again. So you go towards the sun"); 
-        {   oldHoboLadyScene();
+            {   oldHoboLadyScene();
+        }
     }
-}
-
+    /*
+    Enemy Hobo
+    */
     public static void oldHoboLadyScene(){
         System.out.println("while you're walking you see an old lady");
         System.out.println("she's crying for her baby, but the only thing connecting her and the baby that you have in your arms "
@@ -183,8 +196,10 @@ public class Segovia_3_InteractiveFiction {
         System.out.println("she sees that you have a baby so she roars 'can i hold her?'");
         System.out.println("do you give it to her?");
         String oldHoboLadyScene = sc.nextLine();
-}
-
+    }
+    /*
+    End Statement
+    */
     public static void youLose(){
         System.out.println("**********");
         System.out.println("*you lose*");
