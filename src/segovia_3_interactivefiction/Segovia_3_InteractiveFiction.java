@@ -209,15 +209,14 @@ public class Segovia_3_InteractiveFiction {
     public static void hoboChase(){
         System.out.println("She starts to chase you");
         System.out.println("do you outrun her or fight her?");
-        System.out.println("She starts to chase you");
-        String oldHoboLadyScene = sc.nextLine();
+        String hoboChase= sc.nextLine();
                 if ( 
-                    oldHoboLadyScene.contains ("Fight") || oldHoboLadyScene.contains ("fight")) 
+                    hoboChase.contains ("Fight") || hoboChase.contains ("fight")) 
                 {    hoboFight();
             }
                 else if (
-                    oldHoboLadyScene.contains ("Outrun") || oldHoboLadyScene.contains ("outrun")
-                    || oldHoboLadyScene.contains ("Run") || oldHoboLadyScene.contains ("run"))  
+                    hoboChase.contains ("Outrun") || hoboChase.contains ("outrun")
+                    || hoboChase.contains ("Run") || hoboChase.contains ("run"))  
                 {   babyTrip();
             }
     }
@@ -234,18 +233,18 @@ public class Segovia_3_InteractiveFiction {
         }
     }
     public static void hoboFight(){
-        System.out.println("She starts to chase you");
-        System.out.println("do you outrun her or fight her?");
-        System.out.println("She starts to chase you");
-        String oldHoboLadyScene = sc.nextLine();
+        System.out.println("swing first? or let her swing?");
+        String hoboFight = sc.nextLine();
                 if ( 
-                    oldHoboLadyScene.contains ("Fight") || oldHoboLadyScene.contains ("fight")) 
-                {    hoboFight();
+                    hoboFight.contains ("Swing first") || hoboFight.contains ("swing first")) 
+                {   System.out.println("you knock her out and run.");
+                    System.out.println("there is alot of running in this quest.");
+                    youBothAreSafeForNow();
             }
                 else if (
-                    oldHoboLadyScene.contains ("Outrun") || oldHoboLadyScene.contains ("outrun")
-                    || oldHoboLadyScene.contains ("Run") || oldHoboLadyScene.contains ("run"))  
-                {   babyTrip();
+                    hoboFight.contains ("Let her swing") || hoboFight.contains ("let her swing")) 
+                {   System.out.println("you get knocked out and she run with the baby.");;
+                    youLose();
             }
     }
     /*
