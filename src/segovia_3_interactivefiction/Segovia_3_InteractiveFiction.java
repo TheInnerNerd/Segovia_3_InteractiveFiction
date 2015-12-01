@@ -5,7 +5,6 @@
  */
 package segovia_3_interactivefiction;
 import java.util.Scanner;
-
 public class Segovia_3_InteractiveFiction {
     static Scanner sc = new Scanner(System.in);
     static boolean tryAgain;
@@ -19,12 +18,8 @@ public class Segovia_3_InteractiveFiction {
         System.out.println("This is my game 'Protect Her'");
         while (counter > 0){
         startUp();
-        if (counter == 1){
-               System.out.println("you lose >:(");
-               tryAgain = false;
-            }
-        }
         counter--;
+        }
     }
     /*
     Beginning Of Game
@@ -196,6 +191,71 @@ public class Segovia_3_InteractiveFiction {
         System.out.println("she sees that you have a baby so she roars 'can i hold her?'");
         System.out.println("do you give it to her?");
         String oldHoboLadyScene = sc.nextLine();
+            if ( 
+                oldHoboLadyScene.contains ("Give") || oldHoboLadyScene.contains ("give")) 
+            {    hoboChase();
+        }
+            else if (
+                oldHoboLadyScene.contains ("Don't Give") || oldHoboLadyScene.contains ("Dont Give")
+                || oldHoboLadyScene.contains ("don't give") || oldHoboLadyScene.contains ("dont give"))  
+            {   hoboRunsAway();
+        }
+    }
+    public static void hoboRunsAway(){
+        System.out.println("She has runaway and they baby is gone forever");
+            {   youLose();
+        }
+    }
+    public static void hoboChase(){
+        System.out.println("She starts to chase you");
+        System.out.println("do you outrun her or fight her?");
+        System.out.println("She starts to chase you");
+        String oldHoboLadyScene = sc.nextLine();
+                if ( 
+                    oldHoboLadyScene.contains ("Fight") || oldHoboLadyScene.contains ("fight")) 
+                {    hoboFight();
+            }
+                else if (
+                    oldHoboLadyScene.contains ("Outrun") || oldHoboLadyScene.contains ("outrun")
+                    || oldHoboLadyScene.contains ("Run") || oldHoboLadyScene.contains ("run"))  
+                {   babyTrip();
+            }
+    }
+    public static void babyTrip(){
+        System.out.println("you trip and the baby falls out your arms");
+            {   youBothAreSafeForNow();   
+        }        
+    }
+    public static void youBothAreSafeForNow(){
+        System.out.println("you both are safe for now");
+        System.out.println("you a forest");
+        System.out.println("so you run");
+            {   youWin();    
+        }
+    }
+    public static void hoboFight(){
+        System.out.println("She starts to chase you");
+        System.out.println("do you outrun her or fight her?");
+        System.out.println("She starts to chase you");
+        String oldHoboLadyScene = sc.nextLine();
+                if ( 
+                    oldHoboLadyScene.contains ("Fight") || oldHoboLadyScene.contains ("fight")) 
+                {    hoboFight();
+            }
+                else if (
+                    oldHoboLadyScene.contains ("Outrun") || oldHoboLadyScene.contains ("outrun")
+                    || oldHoboLadyScene.contains ("Run") || oldHoboLadyScene.contains ("run"))  
+                {   babyTrip();
+            }
+    }
+    /*
+    Win Statement
+    */
+    public static void youWin(){
+        System.out.println("*********");
+        System.out.println("*you Win*");
+        System.out.println("*********");
+        tryAgain = true;
     }
     /*
     End Statement
