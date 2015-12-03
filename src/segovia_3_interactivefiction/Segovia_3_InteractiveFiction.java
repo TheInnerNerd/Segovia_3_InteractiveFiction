@@ -205,9 +205,11 @@ public class Segovia_3_InteractiveFiction {
     */
     public static void oldHoboLadyScene(){
         System.out.println("while you're walking you see an old lady");
-        System.out.println("she's crying for her baby, but the only thing connecting her and the baby that you have in your arms "
-        + "is the clothes they are wearing");
-        System.out.println("but this is the moment wear she looks straight you, with lightning speed as if your presences alerted her");
+        System.out.println("she's crying for her baby, but the only thing "
+                + "connecting her and the baby that you have in your arms "
+                + "is the clothes they are wearing");
+        System.out.println("but this is the moment wear she looks straight you, "
+                + "with lightning speed as if your presences alerted her");
         System.out.println("she sees that you have a baby so she roars 'can i hold her?'");
         System.out.println("do you give it to her?");
         String oldHoboLadyScene = sc.nextLine();
