@@ -38,6 +38,8 @@ public class Segovia_3_InteractiveFiction {
     }
     /*
     First Choice
+    I had this method directed from from first choice
+    in the startUp method.
     */
    static public void mazeEntrance(){
         System.out.println("you see gates");
@@ -53,6 +55,11 @@ public class Segovia_3_InteractiveFiction {
                 mazeStart();
         }
     }
+    /*
+    This is the other way you could have gone
+    when you were given the 2 choices from the 
+    mazeEntrance method
+    */
     static public void goAround(){
         System.out.println("There isn't a way around");
         System.out.println("You have to go back"); 
@@ -61,6 +68,10 @@ public class Segovia_3_InteractiveFiction {
     }
     /*
     Here is the beginning of the maze
+    everything from here on until my next
+    code comment is the maze.
+    There is about seven methods in this little part
+    each one leading from other method or choice made
     */
     static public void mazeStart(){
         System.out.println("You start to notice that through these gates are");
@@ -119,7 +130,8 @@ public class Segovia_3_InteractiveFiction {
     public static void anotherDeadEnd2(){
         System.out.println("it's another dead end");
         System.out.println ("so you go back");
-            {    anotherDeadEnd();
+        System.out.println ("but you cant");
+            {    youLose();
         }
     }
 
@@ -161,6 +173,10 @@ public class Segovia_3_InteractiveFiction {
             {    plotTwist();
         }
     }
+    /*
+    This is a little "plot twist" i put it to make
+    the player go where i wanted them to go
+    */
     public static void plotTwist(){
         System.out.println("as you are going west, away from the sun rise");
         System.out.println("everything starts to shake. you fall");
@@ -182,6 +198,10 @@ public class Segovia_3_InteractiveFiction {
     }
     /*
     Enemy Hobo
+    Here is the main and somewhat only antagonist in the game
+    she wants the little girl you are protected and causes problems
+    for the player.
+    
     */
     public static void oldHoboLadyScene(){
         System.out.println("while you're walking you see an old lady");
@@ -257,7 +277,7 @@ public class Segovia_3_InteractiveFiction {
         tryAgain = true;
     }
     /*
-    End Statement
+    Lose Statement
     */
     public static void youLose(){
         System.out.println("**********");
