@@ -159,7 +159,8 @@ public class Segovia_3_InteractiveFiction {
     Final Part Of Maze
     */
     public static void mazeFinish(){
-        System.out.println("you've realized you're outta that dark maze and you see sunlight coming from where you now know as the east");
+        System.out.println("you've realized you're outta that dark maze "
+                + "and you see sunlight coming from where you now know as the east");
         System.out.println("once again two ways east or west?");
         String mazeFinish = sc.nextLine();
             if ( 
@@ -182,7 +183,8 @@ public class Segovia_3_InteractiveFiction {
         System.out.println("everything starts to shake. you fall");
         System.out.println("you start to hear howling, while you feel heat bouncing off your body");
         System.out.println("you look up to see that you were going east the whole time");
-        System.out.println("...or were you? you can turn around and try for the 'west' again or stay going east towards the sun");
+        System.out.println("...or were you? you can turn around and try for the 'west' again "
+                + "or stay going east towards the sun");
         String plotTwist=sc.nextLine();
             if ( 
                 plotTwist.contains ("East") || plotTwist.contains ("east")
@@ -192,7 +194,9 @@ public class Segovia_3_InteractiveFiction {
             else if (
                 mazeFinish.contains ("West") || mazeFinish.contains ("west")
                 || mazeFinish.contains ("Go west") || mazeFinish.contains ("go west")) 
-                System.out.println("it all happens again with the baby in your arms you don't know if you'll try it again. So you go towards the sun"); 
+                System.out.println("it all happens again with the baby in your arms "
+                        + "you don't know if you'll try it again. "
+                        + "So you go towards the sun"); 
             {   oldHoboLadyScene();
         }
     }
